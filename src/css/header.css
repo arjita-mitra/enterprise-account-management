@@ -1,0 +1,233 @@
+.container {
+	width: 100%;
+	padding: 0
+}
+.nav-sm .main_container .top_nav {
+	display: block;
+	margin-left: 70px;
+	z-index: 2
+}
+.main_container .top_nav {
+	display: block;
+	margin-left: 230px
+}
+.menu_section>ul {
+	margin-top: 10px
+}
+@media (max-width:991px) {
+	.nav-md .container.body .right_col, .nav-md .container.body .top_nav {
+		width: 100%;
+		margin: 0
+	}
+	.nav-md .container.body .right_col {
+		width: 100%;
+		padding-right: 0
+	}
+	.right_col {
+		padding: 10px!important
+	}
+}
+.navbar-brand, .navbar-nav>li>a {
+	color: #ECF0F1!important;
+	margin-left: 0!important
+}
+
+.detail a, .expand, .jqstooltip, .paging_full_numbers a:hover, a, a:focus, a:hover {
+	text-decoration: none
+}
+
+.overflow_hidden, .sidebar-widget, .tile, .weather-days .col-sm-2, .x_title h2, table.tile_info td p {
+	overflow: hidden
+}
+
+.top_nav .nav .open>a, .top_nav .nav .open>a:focus, .top_nav .nav .open>a:hover, .top_nav .nav>li>a:focus, .top_nav .nav>li>a:hover {
+	background: rgba(204, 0, 204, .5)
+}
+
+.navbar-right {
+	margin-right: 0
+}
+.top_nav .navbar-right {
+	margin: 0;
+	width: 82%;
+	float: right
+}
+.top_nav .navbar-right li {
+	display: inline-block;
+	float: right;
+	position: static
+}
+@media (min-width:480px) {
+	.top_nav .navbar-right li {
+		position: relative
+	}
+}
+.top_nav .dropdown-menu li {
+	width: 100%
+}
+.top_nav .dropdown-menu li a {
+	width: 100%;
+	padding: 12px 20px
+}
+.top_nav li a i {
+	font-size: 15px
+}
+
+.nav_menu {
+	float: left;
+	background: #333;
+	border-bottom: 1px solid #D9DEE4;
+	margin-bottom: 10px;
+	width: 100%;
+	position: relative
+}
+@media (min-width:480px) {
+	.nav_menu {
+		position: static
+	}
+}
+
+.nav li li.current-page a, .nav.child_menu li li a.active, .nav.child_menu li li a:hover {
+	color: #FFF
+}
+
+.nav li.current-page {
+	background: rgba(0, 0, 0, .50)
+}
+
+.nav li li li.current-page {
+	background: 0 0
+}
+
+.toggle {
+	float: left;
+	margin: 0;
+	padding-top: 16px;
+	width: 50px
+}
+.toggle a {
+	padding: 15px 15px 0;
+	margin: 0;
+	cursor: pointer
+}
+.toggle a i {
+	font-size: 26px
+}
+
+.navbar-brand, .navbar-nav>li>a {
+	font-weight: 500;
+	line-height: 32px
+}
+.nav.navbar-nav>li>a {
+	color: #CCC!important
+}
+.navbar-nav .open .dropdown-menu {
+	position: absolute;
+	background: #fff;
+	margin-top: 0;
+	border: 1px solid #D9DEE4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	right: 0;
+	left: auto;
+	width: 220px
+}
+.navbar-nav .open .dropdown-menu.msg_list {
+	width: 300px
+}
+
+a.user-profile {
+	color: #5E6974!important;
+	width: 220px
+}
+.user-profile img {
+	width: 29px;
+	height: 29px;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: 1px Solid #DDD
+}
+
+a.user-profile .user-name{
+	position: absolute;
+	left: 50px;
+	top: 9px;
+}
+
+a.user-profile .user-title{
+	position: absolute;
+	left: 50px;
+	top: 22px;
+	font-size: 9px;
+	color: #AAA;
+}
+
+.user-profile .fa {
+	position: absolute;
+	right: 10px;
+	top: 22px;
+}
+
+.btn-success.active, .btn-success:active, .btn-success:focus, .btn-success:hover, .open .dropdown-toggle.btn-success {
+	background: #169F85
+}
+.btn-dark.active, .btn-dark:active, .btn-dark:focus, .btn-dark:hover, .open .dropdown-toggle.btn-dark {
+	color: #FFF;
+	background-color: #394D5F;
+	border-color: #394D5F
+}
+
+.info-number .badge {
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 13px;
+	padding: 2px 6px;
+	position: absolute;
+	right: 4px;
+	top: 8px
+}
+
+.mail_list .badge {
+	padding: 3px 6px;
+	font-size: 8px;
+	background: #BAB7B7
+}
+
+.bg-green {
+	background: #CC00CC!important;
+	border: 1px solid #CC00CC!important;
+	color: #fff
+}
+
+ul.msg_list li a .image img {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	float: left;
+	margin-right: 10px;
+	width: 11%
+}
+
+ul.msg_list li a .time {
+	font-size: 11px;
+	font-style: italic;
+	font-weight: 700;
+	position: absolute;
+	right: 35px
+}
+ul.msg_list li a .message {
+	display: block!important;
+	font-size: 11px
+}
+a {
+	color: #909
+}
+
+a:hover {
+	color: #C0C
+}
+.nav-sm .menu_section h3, .nav-sm .profile, .nav-sm .menu_section span.fa {
+	display: none
+}
+.nav>li>a {
+	padding: 13px 15px 12px
+}

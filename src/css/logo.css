@@ -1,0 +1,45 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+.nav-sm .navbar.nav_title {
+	width: 70px
+}
+.nav-sm .navbar.nav_title a span {
+	display: none
+}
+.nav-sm .navbar.nav_title a i {
+	font-size: 27px;
+	margin: 13px 0 0 3px
+}
+
+.nav_title {
+	width: 230px;
+	float: left;
+	background: #000;
+	border-radius: 0;
+    height: 57px;
+    border: 0;
+}
+
+.site_title {
+	font-size: 13px;
+	width: 100%;
+	line-height: 60px;
+	display: block;
+	height: 55px;
+	margin: 0;
+	padding-left: 54px;
+	text-align: right;
+	padding-right: 6px;
+	color: #CCC !important;
+	background: url(../assests/jivox_logo.png) 7px 19px no-repeat;
+    background-size: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 0!important
+}
+
+.site_title:focus, .site_title:hover, a, a:focus, a:hover {
+	text-decoration: none
+}
