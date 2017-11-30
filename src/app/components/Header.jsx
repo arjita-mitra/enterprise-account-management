@@ -20,9 +20,9 @@ class HeaderComp extends Component {
 
     toggleMenu() {
         if(this.props.sideNavClass === "nav-md") {
-            this.props.toggleSideMenuAction("nav-sm", 'active-sm');
+            this.props.toggleSideMenuAction('nav-sm');
         } else {
-            this.props.toggleSideMenuAction("nav-md", 'active');
+            this.props.toggleSideMenuAction("nav-md");
         }
     }
 

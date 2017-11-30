@@ -1,27 +1,22 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css'; 
 import Header from './Header';
 import SideNav from './SideNav';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import Logo from './Logo';
+import { Route, Redirect } from 'react-router-dom';
 
 const mapStateToProps = (state) => {
     return {
+        heightClassName: state.toggleSideMenuReducer.heightClassName,
         sideNavClass: state.toggleSideMenuReducer.sideNavClass
     };
 }
 
 class AppComp extends Component {
-    componentDidMount() {
-        const { match: { params } } = this.props;
-        console.log(this.props);
-    }
-
     render() {
         const {match} = this.props;
         let shouldRedirect = match.url === window.location.pathname;
-
         let navActiveClass = 'active';
 
         if(this.props.sideNavClass === "nav-sm") {
@@ -32,8 +27,9 @@ class AppComp extends Component {
             <div className={this.props.sideNavClass}>
                 <div className="container body">
                     <div className="main_container">
-                        <Route path="/" render={()=><Header sideNavClass={this.props.sideNavClass} />} />
-                        <Route path="/" render={()=><SideNav navActiveClass={navActiveClass} currentLocation={this.props.location.pathname} />}/>
+                        <Route render={()=><Logo />} />
+                        <Route render={()=><Header sideNavClass={this.props.sideNavClass} />} />
+                        <Route render={({ match }) => <SideNav match={match} navActiveClass={navActiveClass} currentLocation={this.props.location.pathname} />}/>
                         {shouldRedirect && <Redirect to="/home/dashboard" />}
                     </div>
                 </div>

@@ -1,1 +1,2 @@
 export const TOGGLE_CLASS_NAME = 'TOGGLE_CLASS_NAME';
+export const SET_HEIGHT = 'SET_HEIGHT';

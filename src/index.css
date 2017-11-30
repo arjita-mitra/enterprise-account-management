@@ -1,7 +1,99 @@
-.body {
+body {
 	color: #666666;
 	font-family: 'Soleto',sans-serif;
 	font-size: 13px;
 	font-weight: 400;
-	line-height: 1.471
+	line-height: 1.471;
+	margin: 0 !important;
+}
+
+.clearfix:after, form:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+	display: table;
+	content: " ";
+}
+
+*, :after, :before {
+box-sizing: border-box;
+}
+
+
+.top_nav {
+	grid-area: header;
+}
+
+.nav_content{
+	grid-area: nav-content;
+}
+
+.left-navigation {
+	grid-area: navigation;
+}
+
+.content {
+	grid-area: content;
+}
+
+.footer-content{
+	grid-area: footer;
+	justify-items: center;
+}
+
+.nav_title{
+	grid-area: logo;
+	display: none;
+}
+
+.main_container {
+	display: grid;
+	grid-template-rows: 57px 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+		"header"
+		"nav-content"
+}
+
+@media (min-width: 500px) {
+	.main_container {
+	grid-template-areas: 
+		"header"
+		"nav-content"
+	}
+}
+
+@media (min-width: 700px) {
+	.main_container {
+	grid-template-columns: 0.05fr 1fr;
+	/* grid-auto-columns: auto; */
+	grid-template-areas: 
+		"logo     		header"
+		"nav-content	nav-content"
+	}
+	
+	.left-navigation, .nav_title{
+		display: block;
+	}
+}
+
+.nav_content{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 0.25fr 1fr;
+	grid-template-areas: 
+		"navigation content"
+}
+
+@media (min-width: 700px) {
+	.nav_content{
+		grid-template-columns: 0.05fr 1fr;
+		grid-template-areas: 
+			"navigation		content"
+	}
 }

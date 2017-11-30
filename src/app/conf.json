@@ -1,0 +1,59 @@
+{   
+    "SideMenu": [
+        {
+            "menu": {
+                "menuName": "Home",
+                "child": [
+                    "Dashboard",
+                    "Activities",
+                    "Account Info",
+                    "Recent Projects"
+                ]
+            }  
+        },
+        {
+            "menu": {
+                "menuName": "Accounts",
+                "child": [
+                    "Revenue Report",
+                    "Directory Listing",
+                    "SOW",
+                    "Summary",
+                    "Zero CPM",
+                    "Missing Sales Representatives",
+                    "Do Not Bill - Placements"
+                ]
+            }
+        },
+        {
+            "menu": {
+                "menuName": "People",
+                "child": [
+                    "Publisher Price Details",
+                    "Campaign IO Details",
+                    "SOW Details",
+                    "Create New IO",
+                    "Create New SOW" 
+                ]
+            }
+        },
+        {
+            "menu": {
+                "menuName": "Reports",
+                "child": [
+                    "Manage Sales Representatives",
+                    "Associate Sales Representative"
+                ]
+            }
+        },
+        {
+            "menu": {
+                "menuName": "Support",
+                "child": [
+                    "Manage Sales Representatives",
+                    "Associate Sales Representative"
+                ]
+            }
+        }
+    ]
+}

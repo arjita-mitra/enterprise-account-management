@@ -7,16 +7,13 @@
 import React from 'react';
 import App from '../app/components/App';
 import { Provider } from 'react-redux';
-import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 
 const Root = ({ store }) => (
     <Provider store={store}>
         <BrowserRouter>
             <div>
-                <Switch>
-                    <Route path='/' component={ App }/>
-                    <Redirect from='*' to='/' />
-                </Switch>
+                <Route path="/" component={ App }/>
             </div>
         </BrowserRouter>
     </Provider>
